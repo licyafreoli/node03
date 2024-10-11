@@ -56,3 +56,26 @@ GET /clientes: Retrieve all customers.
 POST /filmes: Add a new movie.
 POST /clientes: Add a new customer.
 POST /alugueis: Rent a movie.
+
+
+FLUSH PRIVILEGES;  -- Para garantir que as permissões sejam recarregadas
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('Mysql102030');
+
+
+
+
+npm init -y
+npm install express mysql2 cors
+node index.js
+
+
+const mysql = require('mysql2/promise')
+
+const pool = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  password: 'Mysql102030',
+  database: 'sistema',
+})
+
+module.exports = pool
