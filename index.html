@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Filmes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Locadora de Filmes</h1>
+        
+        <h2>Filmes</h2>
+        <ul id="filmes-list"></ul>
+        
+        <h2>Clientes</h2>
+        <ul id="clientes-list"></ul>
+        
+        <h2>Cadastrar Filme</h2>
+        <form id="cadastrar-filme">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <input type="text" id="genero" placeholder="Gênero" required>
+            <input type="number" id="preco" placeholder="Preço" required>
+            <input type="text" id="faixa_etaria" placeholder="Faixa Etária" required>
+            <button type="submit">Cadastrar Filme</button>
+        </form>
+        
+        <h2>Cadastrar Cliente</h2>
+        <form id="cadastrar-cliente">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="cpf" placeholder="CPF" required>
+            <input type="text" id="telefone" placeholder="Telefone" required>
+            <input type="number" id="idade" placeholder="Idade" required>
+            <button type="submit">Cadastrar Cliente</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
